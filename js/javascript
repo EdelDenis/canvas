@@ -4,19 +4,12 @@
         let randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
         console.log(randomNumber);
         let popitki = 3;
-        while (popitki > 0) {
-            let question = prompt("Угадайте число от 1 до 9");
-            if 
-            if (randomNumber == question) {
-                alert("Вы угадали!");
-                alert("Осталось попыток :" + popitki);
+        while(popitki > 0 ) {
+            let answer = prompt("Угадайте число от одного до 9");
+            if(randomNumber == answer){
+                alert("Вы угадали! Осталось попыток : " + popitki);
                 break;
-            } else {
-                alert("Вы не угадали!")
-                popitki--;
-                alert("Осталось попыток :" + popitki);
             }
-            if (popitki === 0) {
-                alert("Вы проиграли!");
-            }
-        };    
+            
+        }
+            
